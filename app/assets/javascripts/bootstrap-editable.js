@@ -3511,6 +3511,7 @@ Number
             this.setAttr('min');
             this.setAttr('max');
             this.setAttr('step');
+            this.setAttr('pattern');
         },
         postrender: function() {
             if(this.$clear) {
@@ -3532,7 +3533,8 @@ Number
         inputclass: 'input-mini',
         min: null,
         max: null,
-        step: null
+        step: null,
+        pattern: "[0-9]*"
     });
     $.fn.editabletypes.number = NumberInput;
 }(window.jQuery));
